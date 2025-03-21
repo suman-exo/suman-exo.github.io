@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suman Saha - Research</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;600&display=swap');
+        body {
+            font-family: 'Merriweather', serif;
+            background-color: #8B1A1A;
+            color: white;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            text-align: center;
+        }
+        h2 {
+            text-align: left;
+        }
+        nav {
+            background-color: #000;
+            text-align: center;
+            margin-bottom: 20px; 
+            border-radius: 5px;
+        }
+        nav .nav-container {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 60%;
+            margin: 0 auto;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hamburger {
+            display: none; /* Hide the hamburger on larger screens */
+        }
+        .wrap {
+            float: right;
+            margin: 5px;
+        }
+        p {
+            text-align: justify;
+        }
+        img {
+            width: 350px;
+            height: auto;
+            border: 2px solid white;
+            border-radius: 5px;
+        }
+
+        @media screen and (max-width:600px) {
+            nav {
+                width: 100%;
+                margin: 0 auto;
+            }
+            nav .nav-container {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+            }
+            nav a {
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+            .hamburger {
+                display: block;
+                color: white;
+                cursor: pointer;
+                text-align: center;
+            }
+            img {
+                float: none !important;
+                display: block !important;
+                margin: 20px auto !important;
+                max-width: 100% !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+    <header>
+        <h1 style="font-size: 3em; margin-bottom: 0px;">
+            Suman Saha
+        </h1>
+        <p style="text-align: center;">
+            My Research Interests and Projects
+        </p>
+    </header>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html">Home</a>
+            <a href="research.html">Research</a>
+            <a href="talks.html">Talks</a>
+            <a href="publications.html">Publications</a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div> <!-- Hamburger icon -->
+    </nav>
+    <script>
+        function toggleMenu() {
+            const navContainer = document.querySelector('.nav-container');
+            navContainer.style.display = navContainer.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+
+    <div>
+        <h2>Research Interests</h2>
+        <p>
+            This page is coming soon!
+        </p>
+    </div>
+    </section>
+</body>
+</html>
